@@ -20,9 +20,16 @@ But in case of java based configuration we are using new keyword and we are tell
 This is the difference between annotation based configuration and java based configuration
 By default, the bean name is same as method name. We can specify bean name using @Bean (name=”beanName”).
 
+@Bean annotation provides initMethod and destroyMethod  attributes to perform certain actions, after bean initialization or before bean destructionb by a container
+
+Use Case : whenever you have a requirement to inser records in a database table at application startup then you can use this init method attribute and you can specify 
+the method name
+if you have a requirement to destroy or delete those records from the databse table while application shutdown, the you can simply use destroy method attribute and you 
+can specify the method
+
 @Bean and @Configuration:
 
-@Controller, @Service, @Repository
+@Controller, @Service, @Repository:  
 
 @Lazy
 
