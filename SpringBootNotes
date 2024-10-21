@@ -1,32 +1,55 @@
 25 Spring and Spring Boot Annotations:
-@Component: indicates that an annotated class is a spring bean/component, it tells spring container to automatically create spring bean
-(Spring offers 3 configuration styles: 1. XML based configuration, 2. Annotation based configuration, 3. Java Based Configuration) 
-In real time project, we use @Component to tell spring container to automatically create the spring bean and manage the spring bean for a particular class, we don’t have to create the object of that class using new keyword
+======================================
+
+@Component: indicates that an annotated class is a spring bean/component, it tells the spring container to automatically create a spring bean
+(Spring offers 3 configuration styles: 1. XML-based configuration, 2. Annotation-based configuration, 3. Java Based Configuration) 
+In real real-time project, we use @Component to tell the spring container to automatically create the spring bean and manage the spring bean for a particular class, we don’t have to create 
+the object of that class using a new keyword
 This @Component used in annotation based configuration
+
 @Autowired: is used to inject the bean automatically, the @Autowired annotation is used in constructor injection, setter injection and field injection
-@Qualifier: is used in conjunction with Autowired to avoid confusion when we have 2 or more beans configured for same type
+
+@Qualifier: is used in conjunction with Autowired to avoid confusion when we have 2 or more beans configured for the same type
+
 @Primary: 
+
 @Bean: indicates that a method produces a bean to be managed by the Spring Container, The @Bean annotation is usually declared in configuration class to create Spring Bean definitions,
 This @Bean annotation is used in a Java based configuration and in order to use @Bean annotation, we have to create a configuration class, 
 In case of @Configuration(annotation based configuration, spring IOC container automatically creates the spring beanfor this class, we haven’t created the object of this class using new keyword in case of annotation based configuration)
 But in case of java based configuration we are using new keyword and we are telling spring container to manage this objet (using @Bean), 
 This is the difference between annotation based configuration and java based configuration
 By default, the bean name is same as method name. We can specify bean name using @Bean (name=”beanName”).
+
 @Bean and @Configuration:
+
 @Controller, @Service, @Repository
+
 @Lazy
+
 @Scope
+
 @Value
+
 @PropertySource, @PropertySources
+
 @ConfigurationProperties
+
 @Controller, @ResponseBody
+
 @RestController
+
 @RequestMapping
+
 @GetMapping
+
 @PostMapping , @RequestBody
+
 @PutMapping
+
 @DeleteMapping
+
 @PathVariable
+
 @RequestParam
 
 
